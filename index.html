@@ -11,18 +11,18 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy:    #232323;
-      --navy-mid:#2D2D2D;
+      --navy:    #F5F5F5;
+      --navy-mid:#EBEBEB;
       --teal:    #C8831C;
       --teal-lt: #E09530;
       --green:   #E8001C;
       --gold:    #FF2233;
       --white:   #F5F0EE;
-      --muted:   #9A8E8A;
-      --card-bg: rgba(255,255,255,0.04);
-      --border:  rgba(255,255,255,0.08);
+      --muted:   #666666;
+      --card-bg: #FFFFFF;
+      --border:  rgba(0,0,0,0.09);
       --radius:  14px;
-      --shadow:  0 24px 64px rgba(0,0,0,0.55);
+      --shadow:  0 12px 40px rgba(0,0,0,0.10);
     }
 
     html { scroll-behavior: smooth; }
@@ -30,7 +30,7 @@
     body {
       font-family: 'Inter', sans-serif;
       background: var(--navy);
-      color: var(--white);
+      color: #1A1A1A;
       overflow-x: hidden;
       line-height: 1.6;
     }
@@ -40,7 +40,7 @@
       position: fixed;
       inset: 0;
       z-index: 9999;
-      background: var(--navy);
+      background: #232323;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -147,7 +147,7 @@
     .nav-mobile {
       display: none; flex-direction: column;
       position: fixed; top: 72px; left: 0; right: 0;
-      background: var(--navy-mid); border-bottom: 1px solid var(--border);
+      background: #2D2D2D; border-bottom: 1px solid rgba(255,255,255,0.08);
       padding: 24px 5%; gap: 20px; z-index: 999;
     }
     .nav-mobile.open { display: flex; }
@@ -301,7 +301,7 @@
     }
     .section-title {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(30px, 4vw, 52px); line-height: 1.15; color: var(--white);
+      font-size: clamp(30px, 4vw, 52px); line-height: 1.15; color: #1A1A1A;
     }
     .section-title em { font-style: italic; color: var(--teal-lt); }
     .section-desc {
@@ -344,11 +344,11 @@
     .about-img-accent {
       position: absolute; width: 55%; border-radius: var(--radius);
       aspect-ratio: 1; bottom: -32px; right: -32px;
-      object-fit: cover; border: 4px solid var(--navy); box-shadow: var(--shadow);
+      object-fit: cover; border: 4px solid #F5F5F5; box-shadow: var(--shadow);
     }
     .about-badge {
       position: absolute; top: 24px; left: 24px;
-      background: var(--navy-mid); border: 1px solid var(--border);
+      background: #FFFFFF; border: 1px solid var(--border);
       border-radius: 12px; padding: 14px 20px; backdrop-filter: blur(12px);
     }
     .about-badge .year { font-family: 'Bebas Neue', sans-serif; font-size: 42px; color: var(--gold); line-height: 1; }
@@ -385,12 +385,12 @@
     }
     .team-card-top { height: 8px; background: linear-gradient(90deg, var(--teal), var(--green)); }
     .team-card-body { padding: 28px; }
-    .team-grade { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); letter-spacing: 1px; }
+    .team-grade { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: #1A1A1A; letter-spacing: 1px; }
     .team-div { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--teal-lt); margin-top: 2px; }
     .team-info { margin-top: 20px; display: flex; flex-direction: column; gap: 8px; }
     .team-row { display: flex; justify-content: space-between; font-size: 13px; }
     .team-row span:first-child { color: var(--muted); }
-    .team-row span:last-child { color: var(--white); font-weight: 500; }
+    .team-row span:last-child { color: #1A1A1A; font-weight: 500; }
     .team-card-bar { display: flex; border-top: 1px solid var(--border); }
     .team-bar-item {
       flex: 1; padding: 12px 8px; text-align: center;
@@ -416,7 +416,7 @@
     .news-card:nth-child(3) .news-img { height: 160px; }
     .news-body { padding: 24px; }
     .news-cat { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--teal-lt); }
-    .news-headline { margin-top: 8px; font-size: 17px; font-weight: 600; line-height: 1.4; color: var(--white); }
+    .news-headline { margin-top: 8px; font-size: 17px; font-weight: 600; line-height: 1.4; color: #1A1A1A; }
     .news-card:nth-child(2) .news-headline,
     .news-card:nth-child(3) .news-headline { font-size: 15px; }
     .news-date { margin-top: 12px; font-size: 12px; color: var(--muted); }
@@ -446,7 +446,7 @@
     }
     .fixture-row:hover { border-color: rgba(200,131,28,0.5); }
     .fix-date { text-align: center; }
-    .fix-day { font-family: 'Bebas Neue', sans-serif; font-size: 30px; color: var(--white); line-height: 1; }
+    .fix-day { font-family: 'Bebas Neue', sans-serif; font-size: 30px; color: #1A1A1A; line-height: 1; }
     .fix-mon { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: var(--teal-lt); }
     .fix-team { font-size: 15px; font-weight: 600; }
     .fix-team.away { text-align: right; }
@@ -481,7 +481,7 @@
       text-decoration: none; margin-top: 12px;
       transition: color 0.2s;
     }
-    .instagram-handle:hover { color: var(--white); }
+    .instagram-handle:hover { color: #1A1A1A; }
     .instagram-handle svg { width: 18px; height: 18px; fill: currentColor; }
     .behold-feed-wrap {
       max-width: 1100px; margin: 0 auto;
@@ -513,14 +513,14 @@
     .sponsor-pill {
       display: inline-flex; align-items: center; justify-content: center;
       padding: 0 20px; height: 48px;
-      background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+      background: #FFFFFF; border: 1px solid var(--border);
       border-radius: 8px; font-family: 'Inter', sans-serif;
-      font-size: 13px; font-weight: 600; color: var(--muted);
+      font-size: 13px; font-weight: 600; color: #444444;
       text-decoration: none; letter-spacing: 0.3px;
       transition: background 0.25s, border-color 0.25s, color 0.25s, transform 0.2s;
       white-space: nowrap;
     }
-    .sponsor-pill:hover { background: rgba(255,255,255,0.09); color: var(--white); transform: translateY(-2px); }
+    .sponsor-pill:hover { background: #F0F0F0; color: #1A1A1A; transform: translateY(-2px); }
     .tier-platinum .sponsor-pill { height: 60px; font-size: 17px; font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; color: var(--gold); border-color: rgba(232,0,28,0.35); background: rgba(232,0,28,0.07); padding: 0 32px; }
     .tier-platinum .sponsor-pill:hover { border-color: var(--gold); background: rgba(232,0,28,0.15); }
     .tier-gold .sponsor-pill { height: 52px; color: #D4B860; border-color: rgba(240,192,64,0.2); }
@@ -544,14 +544,14 @@
       background: var(--card-bg); border: 1px solid var(--border);
       border-radius: var(--radius); padding: 40px;
     }
-    .form-title { font-family: 'Playfair Display', serif; font-size: 26px; margin-bottom: 28px; }
+    .form-title { font-family: 'Playfair Display', serif; font-size: 26px; margin-bottom: 28px; color: #1A1A1A; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
     .form-label { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
     .form-input, .form-textarea {
-      background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+      background: #FFFFFF; border: 1px solid var(--border);
       border-radius: 8px; padding: 12px 16px;
-      color: var(--white); font-family: 'Inter', sans-serif; font-size: 14px;
+      color: #1A1A1A; font-family: 'Inter', sans-serif; font-size: 14px;
       outline: none; transition: border-color 0.2s; width: 100%;
     }
     .form-input:focus, .form-textarea:focus { border-color: var(--teal-lt); }
