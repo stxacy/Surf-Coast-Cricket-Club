@@ -63,7 +63,7 @@
       font-family: 'Bebas Neue', sans-serif;
       font-size: 14px;
       letter-spacing: 3px;
-      color: var(--muted);
+      color: #999999;
       animation: splashFadeHint 2.6s ease-in-out infinite;
     }
     @keyframes splashPulse {
@@ -114,7 +114,7 @@
 
     .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
     .nav-links a {
-      text-decoration: none; color: var(--muted);
+      text-decoration: none; color: rgba(245,240,238,0.75);
       font-size: 13px; font-weight: 500; letter-spacing: 0.5px;
       text-transform: uppercase; transition: color 0.2s;
       position: relative;
@@ -123,7 +123,7 @@
       content: ''; position: absolute; left: 0; bottom: -4px;
       width: 0; height: 2px; background: var(--teal-lt); transition: width 0.25s;
     }
-    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover { color: #FFFFFF; }
     .nav-links a:hover::after { width: 100%; }
 
     .nav-cta {
@@ -505,7 +505,7 @@
     .tier-naming   .sponsor-tier-label { color: #fff; background: var(--teal); border: 1px solid var(--teal); }
     .tier-platinum .sponsor-tier-label { color: #fff; background: var(--green); border: 1px solid var(--green); }
     .tier-gold     .sponsor-tier-label { color: #7A5000; background: rgba(200,131,28,0.18); border: 1px solid rgba(200,131,28,0.6); }
-    .tier-silver   .sponsor-tier-label { color: #3A4A58; background: rgba(100,130,160,0.12); border: 1px solid rgba(100,130,160,0.4); }
+    .tier-silver   .sponsor-tier-label { color: #1A2A38; background: rgba(100,130,160,0.15); border: 1px solid rgba(100,130,160,0.5); }
 
     .sponsors-row { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
 
@@ -591,7 +591,7 @@
       display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
       padding-bottom: 48px; border-bottom: 1px solid var(--border);
     }
-    .footer-brand-desc { color: var(--muted); font-size: 14px; line-height: 1.75; margin-top: 16px; max-width: 280px; }
+    .footer-brand-desc { color: #AAAAAA; font-size: 14px; line-height: 1.75; margin-top: 16px; max-width: 280px; }
     .footer-socials { display: flex; gap: 12px; margin-top: 24px; }
     .social-btn {
       width: 38px; height: 38px; border-radius: 10px;
@@ -602,13 +602,13 @@
     .social-btn:hover { background: var(--teal); color: var(--white); border-color: var(--teal); }
     .footer-col-title { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--white); margin-bottom: 20px; }
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-    .footer-links a { text-decoration: none; color: var(--muted); font-size: 14px; transition: color 0.2s; }
+    .footer-links a { text-decoration: none; color: #AAAAAA; font-size: 14px; transition: color 0.2s; }
     .footer-links a:hover { color: var(--teal-lt); }
     .footer-bottom {
       padding-top: 28px; display: flex; justify-content: space-between;
       align-items: center; gap: 16px; flex-wrap: wrap;
     }
-    .footer-copy { font-size: 13px; color: var(--muted); }
+    .footer-copy { font-size: 13px; color: #AAAAAA; }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
@@ -1306,7 +1306,6 @@
         <img class="nav-logo-badge" src="assets/images/sccc-logo.png" alt="Surf Coast Cricket Club logo" />
         <div class="nav-logo-text" style="margin-left:12px;">
           <span>Surf Coast Cricket Club</span>
-          <span>Cricket Club</span>
         </div>
       </a>
       <p class="footer-brand-desc">
